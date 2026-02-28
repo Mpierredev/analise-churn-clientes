@@ -51,8 +51,8 @@ Para garantir a máxima reprodutibilidade, este projeto resolve caminhos de arqu
 ### Opção B: Fluxo Simplificado (Apenas CSV Limpo)
 Se você não deseja configurar um banco de dados local, pode acessar diretamente os dados processados:
 
-1. Execute as primeiras células do arquivo `notebooks/analise_churn.ipynb` (apenas as etapas de Extração e Transformação).
-2. O script gerará automaticamente o arquivo `cleaned_telco_churn.csv` na pasta `data/processed/`.
+1. Abra o arquivo `notebooks/analise_churn.ipynb` e execute as células sequencialmente até o **Passo 3 (Checkpoint Físico)**.
+2. O script gerará automaticamente o arquivo `cleaned_telco_churn.csv` na pasta `data/processed/` sem tentar conectar ao banco de dados.
 3. Você pode importar este arquivo em qualquer ferramenta (Excel, Power BI, Tableau) para consumo imediato.
 
 ## 🗺️ Roadmap e Evolução do Projeto
