@@ -7,6 +7,11 @@ O *Churn* (taxa de cancelamento) é uma das métricas mais críticas para empres
 
 A solução construída é um Pipeline de Dados completo: extração, tratamento padronizado, modelagem relacional, criação de camada semântica e análise exploratória estruturada.
 
+## 📦 Fonte de Dados
+Os dados utilizados neste projeto pertencem ao dataset público **"Telco Customer Churn"**, originalmente disponibilizado pela **IBM** para fins educacionais e de pesquisa, e amplamente distribuído através da plataforma **Kaggle**.
+- A base contém informações de mais de 7.000 clientes, incluindo perfis demográficos, serviços contratados, dados financeiros de conta e o status final de retenção ou cancelamento (*Churn*).
+- Para entender o detalhamento e as regras de negócio de cada variável, consulte o nosso [Dicionário de Dados](data/data_dictionary.md).
+
 ## 🛠️ Arquitetura e Tecnologias
 - **Linguagem:** Python 3 (Pandas, SQLAlchemy, python-dotenv)
 - **Banco de Dados:** PostgreSQL
@@ -19,18 +24,18 @@ A solução construída é um Pipeline de Dados completo: extração, tratamento
 ```text
 analise-churn-clientes/
 ├── data/
-│   ├── processed/                   # Checkpoint físico dos dados limpos (CSV)
+│   ├── processed/                   # Checkpoint físico dos dados limpos
 │   │   └── cleaned_telco_churn.csv
-│   └── raw/                         # Dados originais brutos (imutáveis)
+│   └── raw/                         # Dados originais brutos
 │       └── WA_Fn-UseC_-Telco-Customer-Churn.csv
 ├── notebooks/
-│   └── analise_churn.ipynb          # Pipeline ETL em Python (Extract, Transform, Load)
+│   └── analise_churn.ipynb          # Pipeline ETL em Python
 ├── sql/
 │   ├── 01_create_tables.sql         # DDL para criação do schema e tabela bruta
-│   ├── 02_vw_churn_analytics.sql    # Camada Semântica (View com traduções e regras de negócio)
-│   └── 03_analise_exploratoria.sql  # Queries de negócio (CTEs e Window Functions consumindo a View)
+│   ├── 02_vw_churn_analytics.sql    # Camada Semântica
+│   └── 03_analise_exploratoria.sql  # Queries de negócio
 ├── .env.example                     # Template seguro de variáveis de ambiente
-├── .gitignore                       # Arquivos ignorados pelo Git
+├── .gitignore                       
 └── README.md                        # Documentação do projeto
 ```
 ## 🚀 Como Reproduzir este Projeto
