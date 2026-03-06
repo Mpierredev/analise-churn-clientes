@@ -1,6 +1,6 @@
 # 📊 Análise de Churn de Clientes (Telecom)
 
-**Status do Projeto:** 🟡 Em Desenvolvimento
+**Status do Projeto:** 🟡 Em Desenvolvimento (Fase de BI e Visualização de Dados no Tableau)
 
 ## 🎯 O Problema de Negócio
 O *Churn* (taxa de cancelamento) é uma das métricas mais críticas para empresas de serviços por assinatura. Este projeto tem como objetivo analisar uma base de dados de uma empresa de Telecomunicações para identificar quem são os clientes que estão cancelando seus serviços e por que isso está acontecendo. 
@@ -65,5 +65,5 @@ Se você não deseja configurar um banco de dados local, pode acessar diretament
 - [x] Modelagem Física e Carga Segura no PostgreSQL.
 - [x] Implementação de Camada Semântica (View) para padronização de regras de negócio.
 - [x] Análise Exploratória (EDA) com SQL Avançado.
-- [ ] Conexão da View consolidada no Tableau.
+- [x] Conexão da base de dados e validação de KPIs no Tableau.
 - [ ] Criação do Dashboard interativo de Churn e Perfil de Cliente.
