@@ -1,7 +1,5 @@
 # 📊 Análise de Churn de Clientes (Telecom)
 
-**Status do Projeto:** 🟡 Em Desenvolvimento (Fase de BI e Visualização de Dados no Tableau)
-
 ## 🎯 O Problema de Negócio
 O *Churn* (taxa de cancelamento) é uma das métricas mais críticas para empresas de serviços por assinatura. Este projeto tem como objetivo analisar uma base de dados de uma empresa de Telecomunicações para identificar quem são os clientes que estão cancelando seus serviços e por que isso está acontecendo. 
 
@@ -11,6 +9,10 @@ A solução construída é um Pipeline de Dados completo: extração, tratamento
 Os dados utilizados neste projeto pertencem ao dataset público **"Telco Customer Churn"**, originalmente disponibilizado pela **IBM** para fins educacionais e de pesquisa, e amplamente distribuído através da plataforma **Kaggle**.
 - A base contém informações de mais de 7.000 clientes, incluindo perfis demográficos, serviços contratados, dados financeiros de conta e o status final de retenção ou cancelamento (*Churn*).
 - Para entender o detalhamento e as regras de negócio de cada variável, consulte o nosso [Dicionário de Dados](data/data_dictionary.md).
+
+## 📈 Dashboard Executivo (Tableau)
+O resultado final da modelagem de dados e a visão executiva interativa podem ser acessados publicamente no Tableau Public:
+👉 **[Acessar o Painel Interativo de Churn](https://public.tableau.com/app/profile/m.rcio.pierre.santos.monteiro/viz/Customer_Retention_and_Churn_Dashboard/Painel1#1)**
 
 ## 🛠️ Arquitetura e Tecnologias
 - **Linguagem:** Python 3 (Pandas, SQLAlchemy, python-dotenv)
@@ -59,11 +61,3 @@ Se você não deseja configurar um banco de dados local, pode acessar diretament
 1. Abra o arquivo `notebooks/analise_churn.ipynb` e execute as células sequencialmente até o **Passo 3 (Checkpoint Físico)**.
 2. O script gerará automaticamente o arquivo `cleaned_telco_churn.csv` na pasta `data/processed/` sem tentar conectar ao banco de dados.
 3. Você pode importar este arquivo em qualquer ferramenta (Excel, Power BI, Tableau) para consumo imediato.
-
-## 🗺️ Roadmap e Evolução do Projeto
-- [x] Construção do Pipeline ETL modularizado em Python.
-- [x] Modelagem Física e Carga Segura no PostgreSQL.
-- [x] Implementação de Camada Semântica (View) para padronização de regras de negócio.
-- [x] Análise Exploratória (EDA) com SQL Avançado.
-- [x] Conexão da base de dados e validação de KPIs no Tableau.
-- [ ] Criação do Dashboard interativo de Churn e Perfil de Cliente.
