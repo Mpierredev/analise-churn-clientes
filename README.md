@@ -14,6 +14,8 @@ Os dados utilizados neste projeto pertencem ao dataset público **"Telco Custome
 O resultado final da modelagem de dados e a visão executiva interativa podem ser acessados publicamente no Tableau Public:
 👉 **[Acessar o Painel Interativo de Churn](https://public.tableau.com/app/profile/m.rcio.pierre.santos.monteiro/viz/Customer_Retention_and_Churn_Dashboard/Painel1#1)**
 
+![Preview do Dashboard de Churn](assets/dashboard_preview.png)
+
 ## 💡 Principais Insights e Recomendações de Negócio
 
 O objetivo de um projeto de dados não é apenas gerar gráficos, mas direcionar a tomada de decisão. Através da Análise Exploratória e do Dashboard, diagnosticamos que a taxa global de churn da empresa é de **26,5%** (resultando em uma perda mensal de $139 mil). 
