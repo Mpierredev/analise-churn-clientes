@@ -14,6 +14,24 @@ Os dados utilizados neste projeto pertencem ao dataset público **"Telco Custome
 O resultado final da modelagem de dados e a visão executiva interativa podem ser acessados publicamente no Tableau Public:
 👉 **[Acessar o Painel Interativo de Churn](https://public.tableau.com/app/profile/m.rcio.pierre.santos.monteiro/viz/Customer_Retention_and_Churn_Dashboard/Painel1#1)**
 
+## 💡 Principais Insights e Recomendações de Negócio
+
+O objetivo de um projeto de dados não é apenas gerar gráficos, mas direcionar a tomada de decisão. Através da Análise Exploratória e do Dashboard, diagnosticamos que a taxa global de churn da empresa é de **26,5%** (resultando em uma perda mensal de $139 mil). 
+
+No entanto, o Churn não é aleatório. Ele segue padrões claros de comportamento e produto:
+
+### 🔍 Descobertas Chave (O Diagnóstico)
+1. **A Armadilha do Contrato Mensal:** O contrato *Month-to-month* é o maior ofensor da empresa, com uma taxa de cancelamento assustadora de **42,7%**. Em contrapartida, clientes com contratos de 1 ou 2 anos têm taxas de evasão quase nulas (11% e 2%, respectivamente).
+2. **O Paradoxo da Fibra Óptica:** O serviço de Fibra Óptica, que teoricamente deveria ser o produto premium e mais rápido, lidera os cancelamentos (**41,9%** contra apenas 19% do cabo DSL). Isso indica um sério problema de qualidade técnica, instabilidade da rede ou preço descolado da concorrência.
+3. **Falta de Retenção por Suporte:** Clientes que não possuem Suporte Técnico contratado cancelam em massa (**41,6%**). O cliente que enfrenta problemas e não tem um canal rápido de ajuda simplesmente abandona o provedor.
+4. **Sensibilidade ao Preço Inicial:** A análise de dispersão provou que a maior concentração de cancelamentos ocorre nos primeiros meses de vida do cliente (até 12 meses), especialmente naqueles que recebem faturas com valores mais altos.
+
+### 🎯 Plano de Ação (Próximos Passos Sugeridos)
+Com base nos dados, a equipe de Produto e Vendas deve focar em:
+* **Campanhas de Migração (Upsell):** Oferecer descontos agressivos na fatura para clientes do plano Mensal que aceitarem migrar para o plano de fidelidade de 1 ano.
+* **Auditoria Operacional na Fibra:** Acionar a equipe de infraestrutura para investigar quedas de sinal ou latência nos clientes de Fibra Óptica, além de rodar uma pesquisa de NPS específica com esse grupo.
+* **Bundle de Suporte Técnico:** Passar a embutir o "Suporte Técnico" gratuitamente (ou a um custo irrisório) nos primeiros 6 meses de contrato, período crítico de maior mortalidade (churn) da base.
+
 ## 🛠️ Arquitetura e Tecnologias
 - **Linguagem:** Python 3 (Pandas, SQLAlchemy, python-dotenv)
 - **Banco de Dados:** PostgreSQL
