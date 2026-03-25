@@ -1,9 +1,16 @@
 # 📊 Análise de Churn de Clientes (Telecom)
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white" alt="Tableau" />
+</p>
+
 ## 🎯 O Problema de Negócio
 O *Churn* (taxa de cancelamento) é uma das métricas mais críticas para empresas de serviços por assinatura. Este projeto tem como objetivo analisar uma base de dados de uma empresa de Telecomunicações para identificar quem são os clientes que estão cancelando seus serviços e por que isso está acontecendo. 
 
-A solução construída é um Pipeline de Dados completo: extração, tratamento padronizado, modelagem relacional, criação de camada semântica e análise exploratória estruturada.
+A solução construída é um Pipeline de Dados completo: extração via Python, tratamento padronizado com Pandas, modelagem relacional no PostgreSQL, criação de camada semântica e visualização executiva no Tableau.
 
 ## 📦 Fonte de Dados
 Os dados utilizados neste projeto pertencem ao dataset público **"Telco Customer Churn"**, originalmente disponibilizado pela **IBM** para fins educacionais e de pesquisa, e amplamente distribuído através da plataforma **Kaggle**.
